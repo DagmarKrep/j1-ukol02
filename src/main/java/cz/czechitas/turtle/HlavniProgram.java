@@ -9,13 +9,21 @@ public class HlavniProgram {
 
     public void start() {
 
-        nakresliRovnostrannyTrojuhelnik (80, Color.red);
+
+//        nakresliRovnostrannyTrojuhelnik (80, Color.red);
+
+
+        zofka.setLocation(200.0,200.0);
+        nakresliRovnostrannyTrojuhelnik(50.0, Color.red);
+
+        zofka.setLocation(300.0,100.0);
+        nakresliRovnostrannyTrojuhelnik(70.0, Color.blue);
+
 
     }
 
 
     public void nakresliRovnostrannyTrojuhelnik (double delkaStrany, Color barva) {
-        zofka.turnRight(90);
 
         zofka.setPenColor(barva);
         zofka.move(delkaStrany);
